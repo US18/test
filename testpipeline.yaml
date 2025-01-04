@@ -4,9 +4,6 @@ stages:
 
 job1: 
   stage: build
-  script:
-    - echo "hello"
+  
 job2:
   stage: test
-  script:
-    - echo "hi"
