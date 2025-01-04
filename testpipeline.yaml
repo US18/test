@@ -1,9 +1,7 @@
-stages:
-  - build
-  - test
-
-job1: 
-  stage: build
-  
-job2:
-  stage: test
+pipeline:
+  agent:
+    any:
+  stages:
+    - stage: "Check Pipeline Integration"
+      steps:
+        - sh "echo 'Hello from Github Pipeline'"
